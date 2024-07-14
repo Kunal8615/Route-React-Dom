@@ -7,6 +7,8 @@ import Layout from './layout.jsx'
 import Home from './components/home/home.jsx'
 import About from './components/About/About.jsx'
 import Contact from './components/contact/contact.jsx'
+import { createRef } from 'react'
+
 
 const route = createBrowserRouter([
   {
@@ -29,6 +31,18 @@ const route = createBrowserRouter([
   }
 ])
 
+
+
+/*
+const route = createBrowserRouter([
+  createRouteFromElements(
+    <Route path : "" elemet = {<Home/>}>
+          <Route path : "" elemet = {<Home/>}>
+    </Route>
+  )
+])
+*/
+// or synatx
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={route}/>
